@@ -13,7 +13,7 @@ I am writing this guide and developing the React application using [Visual Studi
 
 The VM is running Node.js version `20.10.0` with NPM version `10.2.4`. It also has 6 GBs of DDR4 RAM and two vCPU cores.
 
-![Dev Setup Image](https://raw.githubusercontent.com/deaconn-net/react-form-with-dynamic-fields-and-formik/images/devsetup.png)
+![Dev Setup Image](https://raw.githubusercontent.com/deaconn-net/react-form-with-dynamic-fields-and-formik/main/images/devsetup.png)
 
 ## Prerequisites
 React, TypeScript, and Formik are required for this guide. We will also be using Node.js with its package manager, NPM.
