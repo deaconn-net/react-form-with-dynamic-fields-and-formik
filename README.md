@@ -155,7 +155,7 @@ We'll be replacing the `[Add Button]` text above with the following code.
 <div>
     <button
         type="button"
-        onClick=(() => push(emptyPerson))
+        onClick={() => push(emptyPerson)}
     >Add Person</button>
 </div>
 ```
@@ -301,7 +301,7 @@ git clone https://github.com/deaconn-net/react-form-with-dynamic-fields-and-form
 # Change directories
 cd react-form-with-dynamic-fields-and-formik
 
-# Install NPM packages.
+# Install NPM packages
 npm install
 ```
 
@@ -312,7 +312,7 @@ You may use the following command to start the NPM development server.
 npm start
 ```
 
-This should make [http://localhost:3000](http://localhost:3000) accessible. If you're starting the development server on another machine, you will most likely need to replace `localhost` with your server's IP address and ensure port `3000/TCP` is allowed through its firewall. In my case, Visual Studio Code's Remote SSH extension automatically forwards `localhost:3000` to the server's IP on port 3000.
+This should make [http://localhost:3000](http://localhost:3000) accessible. If you're starting the development server on another machine, you will most likely need to replace `localhost` with your server's IP address and ensure port `3000/TCP` is allowed through its firewall. In my case, Visual Studio Code's Remote SSH extension automatically forwards `localhost:3000` to the server's IP on port `3000`.
 
 ### Preview
 You should see a page like below when visiting the React application through your web browser.
@@ -324,7 +324,7 @@ Now feel free to experiment with the fields along with add/remove buttons!
 ![Test Preview 02](https://raw.githubusercontent.com/deaconn-net/react-form-with-dynamic-fields-and-formik/main/images/testpreview02.png)
 
 ### Clicking The "Add People" Button
-If you click the "Add People" submit button at the bottom and have some people added to your list, you should see an array outputted in the web developer console. You can normally access the web developer console using `F12`, but this depends on what web browser you're using.
+If you click the "Add People" submit button at the bottom and have some people added to your list, you should see an array outputted in the web developer console. You can normally access the web developer console using the `F12` button, but this depends on what web browser you're using.
 
 ![Test Preview 03](https://raw.githubusercontent.com/deaconn-net/react-form-with-dynamic-fields-and-formik/main/images/testpreview03.png)
 
@@ -357,7 +357,7 @@ const startingPeople = [{
 ## Conclusion
 That's all! I wanted to show you how to make a very simple form with dynamic fields and I hope this guide has helped you achieve that goal!
 
-I also have a couple open source websites that utilize dynamic fields using React, Formik, and TypeScript listed below if you want to check them out!
+I also have a couple open source websites that utilize dynamic fields inside of forms using React, Formik, and TypeScript listed below if you want to check them out!
 
 * [Best Mods](https://github.com/bestmods/bestmods/blob/main/src/components/forms/mod/main.tsx) - Mod form.
 * [Deaconn](https://github.com/deaconn-net/deaconn/blob/master/src/components/forms/user/Project.tsx) - User project form.
