@@ -1,4 +1,4 @@
-import { Formik, Form, Field, FieldArray } from 'formik';
+import { Formik, Form, Field, FieldArray } from 'formik'
 
 // We're using an empty person as default.
 const emptyPerson = {
@@ -31,13 +31,13 @@ function App() {
         console.log(values)
       }}
     >
-      {(form) => (
+      {({ values }) => (
         <Form>
           <h1>People</h1>
           <FieldArray name="people">
             {({ push, remove }) => (
               <>
-                {form.values.people.map((_person, index) => {
+                {values.people.map((_person, index) => {
                   // To simplify code, let's build the starting string of our field names for this specific person which is `people[index]`.
                   const startName = `people[${index.toString()}]`
 
@@ -50,9 +50,7 @@ function App() {
                       </div>
                       <div>
                         <label htmlFor={`${startName}.last`}>Last Name</label>
-                        <Field
-                        name={`${startName}.last`}
-                        />
+                        <Field name={`${startName}.last`} />
                       </div>
                       <div>
                         <label htmlFor={`${startName}.age`}>Age</label>
